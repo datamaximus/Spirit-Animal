@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Spirit Animal</string>
+    <string name="statementOne">I prefer day to night</string>
+    <string name="statementTwo">Running makes me happy</string>
+    <string name="statementThree">Eating meat is okay</string>
+    <string name="statementFour">I love water</string>
+    <string name="statementFive">Flying is the best</string>
+    <string name="prompt">Please choose the most accurate response</string>
+
+    <string-array name="choices">
+        <item>Disagree</item>
+        <item>Somewhat Disagree</item>
+        <item>No opinion</item>
+        <item>Somewhat Agree</item>
+        <item>Agree</item>
+    </string-array>
 </resources>

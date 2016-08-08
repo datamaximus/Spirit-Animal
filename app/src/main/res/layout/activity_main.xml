@@ -8,10 +8,51 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="jasonwiram.com.spiritanimal.MainActivity">
+    tools:context="jasonwiram.com.spiritanimal.MainActivity"
+    android:background="#f5f5f5"
+    android:clickable="true">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Find Your Spirit Animal"
+        android:id="@+id/titleTextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="32sp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_alignParentEnd="false"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleTextView"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statementOne"
+            android:id="@+id/textView"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner"
+            android:entries="@array/choices"
+            android:layout_weight="1"
+            android:popupBackground="#ffffff"
+            android:spinnerMode="dropdown"
+            android:background="@color/highlighted_text_material_light"
+            android:layout_marginLeft="12dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
 </RelativeLayout>

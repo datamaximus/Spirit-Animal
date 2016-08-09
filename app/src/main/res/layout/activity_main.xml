@@ -4,35 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="jasonwiram.com.spiritanimal.MainActivity"
     android:background="#f5f5f5"
     android:clickable="true">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Find Your Spirit Animal"
         android:id="@+id/titleTextView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:textSize="32sp"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="12dp"
         android:layout_marginBottom="24dp"
-        android:layout_alignParentEnd="false"/>
+        android:layout_alignParentEnd="false"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:background="@color/primary_text_default_material_light"
+        android:textColor="#f5f5f5"/>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/titleTextView"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout">
 
         <TextView
             android:layout_width="wrap_content"
@@ -40,7 +40,8 @@
             android:text="@string/statementOne"
             android:id="@+id/textView"
             android:textSize="24sp"
-            android:layout_marginLeft="12dp"/>
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"/>
 
         <Spinner
             android:layout_width="wrap_content"
@@ -50,9 +51,141 @@
             android:layout_weight="1"
             android:popupBackground="#ffffff"
             android:spinnerMode="dropdown"
-            android:background="@color/highlighted_text_material_light"
             android:layout_marginLeft="12dp"
-            android:textAlignment="center"/>
+            android:textAlignment="textEnd"
+            android:clickable="true"
+            android:layout_marginBottom="12dp"/>
     </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statementTwo"
+            android:id="@+id/textView2"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner2"
+            android:entries="@array/choices"
+            android:layout_weight="1"
+            android:popupBackground="#ffffff"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="12dp"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statementThree"
+            android:id="@+id/textView3"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner3"
+            android:entries="@array/choices"
+            android:layout_weight="1"
+            android:popupBackground="#ffffff"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="12dp"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statementFour"
+            android:id="@+id/textView4"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner4"
+            android:entries="@array/choices"
+            android:layout_weight="1"
+            android:popupBackground="#ffffff"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="12dp"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="12dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/statementFive"
+            android:id="@+id/textView5"
+            android:textSize="24sp"
+            android:layout_marginLeft="12dp"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/spinner5"
+            android:entries="@array/choices"
+            android:layout_weight="1"
+            android:popupBackground="#ffffff"
+            android:spinnerMode="dropdown"
+            android:layout_marginLeft="12dp"
+            android:textAlignment="textEnd"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/submitButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="24sp"
+        android:textColor="#f5f5f5"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="24dp"/>
 
 </RelativeLayout>

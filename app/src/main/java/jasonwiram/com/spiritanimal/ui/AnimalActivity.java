@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import jasonwiram.com.spiritanimal.R;
 
@@ -22,6 +24,9 @@ public class AnimalActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         mName = intent.getStringExtra("animal");
+        Toast toast = Toast.makeText(AnimalActivity.this, "Your spirit animal is a " + mName, Toast.LENGTH_LONG);
+        toast.setGravity(Gravity.TOP,0,48);
+        toast.show();
         checkAnimal(mName);
     }
 

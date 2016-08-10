@@ -23,7 +23,7 @@
         android:layout_below="@+id/animalImageView"
         android:layout_alignParentStart="true"
         android:background="#f5f5f5"
-        android:hint="Tap here to enter a caption for your spirit animal"
+        android:hint="Tap here to enter a caption"
         android:textColorHint="#212121"
         android:textColor="#212121"
         android:textAlignment="center"

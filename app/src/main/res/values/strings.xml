@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">Spirit Animal</string>
-    <string name="statementOne">Soccer is better than baseball</string>
-    <string name="statementTwo">Foreign languages are easy</string>
+    <string name="statementOne">Soccer > baseball</string>
+    <string name="statementTwo">Languages are easy</string>
     <string name="statementThree">Being active is fun</string>
-    <string name="statementFour">Schrodinger\'s cat is alive</string>
-    <string name="statementFive">There is life beyond Earth</string>
+    <string name="statementFour">Schrodinger\'s cat lives</string>
+    <string name="statementFive">Aliens exist</string>
     <string name="prompt">Please choose the most accurate response</string>
 
     <string-array name="choices">

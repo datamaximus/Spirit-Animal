@@ -5,7 +5,6 @@
     <string name="statementThree">Being active is fun</string>
     <string name="statementFour">Schrodinger\'s cat lives</string>
     <string name="statementFive">Aliens exist</string>
-    <string name="prompt">Please choose the most accurate response</string>
 
     <string-array name="choices">
         <item>No opinion</item>

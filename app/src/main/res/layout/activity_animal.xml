@@ -8,24 +8,46 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:id="@+id/animalImageView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
         android:src="@drawable/dolphin"
         android:scaleType="fitXY"
-        android:adjustViewBounds="true"/>
+        android:adjustViewBounds="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/editText"
-        android:layout_below="@+id/animalImageView"
-        android:layout_alignParentStart="true"
+        android:layout_alignParentStart="false"
         android:background="#f5f5f5"
         android:hint="Tap here to enter a caption"
         android:textColorHint="#212121"
         android:textColor="#212121"
         android:textAlignment="center"
-        android:inputType="text"/>
+        android:inputType="text"
+        android:layout_alignParentBottom="true"
+        android:textSize="24sp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Caption will go here"
+        android:id="@+id/captionTextView"
+        android:visibility="invisible"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        android:background="#99f5f5f5"
+        android:maxWidth="120dp"
+        android:padding="12dp"
+        android:layout_marginEnd="45dp"
+        android:layout_above="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:maxLength="120"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="120dp"/>
 </RelativeLayout>

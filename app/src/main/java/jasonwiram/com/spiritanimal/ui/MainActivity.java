@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 
+import java.util.Random;
+
 import jasonwiram.com.spiritanimal.R;
 
 public class MainActivity extends AppCompatActivity {
@@ -71,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                 || spinner2Choice.equalsIgnoreCase("Somewhat Agree"))
                 && (spinner4Choice.equalsIgnoreCase("Disagree")
                 || spinner4Choice.equalsIgnoreCase("Somewhat Disagree"))) {
-            mAnimal = "redpanda";
+            mAnimal = "red panda";
         }
         else if((spinner4Choice.equalsIgnoreCase("Agree")
                 || spinner4Choice.equalsIgnoreCase("Somewhat Agree"))
@@ -80,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             mAnimal = "tiger";
         }
         else {
-            mAnimal = "Unicorn";
+            getRandomAnimal();
         }
     }
 
@@ -89,5 +91,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AnimalActivity.class);
         intent.putExtra("animal", mAnimal);
         startActivity(intent);
+    }
+
+    private void getRandomAnimal() {
+        String[] animals = {"wolf", "flamingo", "hippo", "alligator", "snake"};
+        Random rand = new Random();
+        int randomNumber = rand.nextInt(5);
+        mAnimal = animals[randomNumber];
     }
 }

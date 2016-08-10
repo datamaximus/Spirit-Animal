@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.MainActivity"
-    android:background="#81c784"
+    android:background="#ffffff"
     android:clickable="true">
 
     <TextView
@@ -151,7 +151,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/linearLayout4"
-        android:layout_centerHorizontal="true">
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout5">
 
         <TextView
             android:layout_width="wrap_content"
@@ -185,8 +186,19 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:layout_marginBottom="12dp"
-        android:layout_marginTop="24dp"
         android:paddingTop="12dp"
         android:paddingBottom="12dp"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/silhouettes"
+        android:layout_margin="12dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        />
 
 </RelativeLayout>

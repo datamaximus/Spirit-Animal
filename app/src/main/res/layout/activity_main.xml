@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="jasonwiram.com.spiritanimal.MainActivity"
+    tools:context=".ui.MainActivity"
     android:background="#f5f5f5"
     android:clickable="true">
 
@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:text="@string/statementOne"
             android:id="@+id/textView"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="12dp"/>
 
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:text="@string/statementTwo"
             android:id="@+id/textView2"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="12dp"/>
 
@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:text="@string/statementThree"
             android:id="@+id/textView3"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="12dp"/>
 
@@ -130,7 +130,7 @@
             android:layout_height="wrap_content"
             android:text="@string/statementFour"
             android:id="@+id/textView4"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:layout_marginLeft="12dp"
             android:layout_marginBottom="12dp"/>
 
@@ -159,7 +159,7 @@
             android:layout_height="wrap_content"
             android:text="@string/statementFive"
             android:id="@+id/textView5"
-            android:textSize="24sp"
+            android:textSize="18sp"
             android:layout_marginLeft="12dp"/>
 
         <Spinner
@@ -181,7 +181,7 @@
         android:id="@+id/submitButton"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:textSize="24sp"
+        android:textSize="18sp"
         android:textColor="#f5f5f5"
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"

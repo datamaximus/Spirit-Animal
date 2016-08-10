@@ -4,15 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="jasonwiram.com.spiritanimal.AnimalActivity">
+    tools:context=".ui.AnimalActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
+        android:id="@+id/animalImageView"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
         android:src="@drawable/dolphin"
         android:scaleType="fitXY"
         android:adjustViewBounds="true"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/editText"
+        android:layout_below="@+id/animalImageView"
+        android:layout_alignParentStart="true"
+        android:background="#f5f5f5"
+        android:hint="Tap here to enter a caption for your spirit animal"
+        android:textColorHint="#212121"
+        android:textColor="#212121"
+        android:textAlignment="center"
+        android:inputType="text"/>
 </RelativeLayout>
